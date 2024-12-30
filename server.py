@@ -82,6 +82,7 @@ def send_pickup_line(message):
         pickup_line = result['text']
         emoji = get_category_emoji(category)
         
+        
         # Send header message with category
         header = f"🎯 *Here's your {category.title()} pickup line:* {emoji}"
         bot.send_message(message.chat.id, header, parse_mode='Markdown')
